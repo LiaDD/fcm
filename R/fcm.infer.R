@@ -19,14 +19,14 @@
 # C.D. Stylios, P.P. Groumpos, "A Soft Computing Approach for Modelling the Supervisor of Manufacturing Systems", Intelligent and Robotic Systems, vol. 26, p.p. 389-403, 1999.
 # E.I. Papageorgiou, "A new methodology for Decisions in Medical Informatics using fuzzy cognitive maps based on fuzzy rule-extraction techniques", Applied Soft Computing, vol. 11, Issue 1, p.p. 500-513, 2011.
 # E.I. Papageorgiou, "Fuzzy Cognitive Maps for Applied Sciences and Engineering From Fundamentals to Extensions and Learning Algorithms", Intelligent Systems Reference Library, Vol 54, 2014.
-#
-Examples
+
+#Examples
 # Example for the FCM inference with 8 nodes
 
  ### Input data
 
  # Create the activation vector
-act.vec <- data.frame(1, 1, 0, 0, 0, 0, 0, 0)
+# act.vec <- data.frame(1, 1, 0, 0, 0, 0, 0, 0)
 # Change the column names
 # colnames(act.vec) <- c("C1", "C2", "C3", "C4", "C5", "C6", "C7", "C8")
 
@@ -54,7 +54,7 @@ act.vec <- data.frame(1, 1, 0, 0, 0, 0, 0, 0)
 
 # library (reshape2)
 # library (ggplot2)
- # create a numeric vector named "iterations"
+# create a numeric vector named "iterations"
 # iterations <- as.numeric(rownames(output$values))
 # add "iterations" in the "output$values" dataframe
 # df <- data.frame(iterations, output$values)
@@ -88,10 +88,9 @@ act.vec <- data.frame(1, 1, 0, 0, 0, 0, 0, 0)
 # w.mat <- as.data.frame(w.mat)
 
 ### Select the arguments for the fcm.infer function
-#
+
 # output <- fcm.infer(act.vec, w.mat, 25, "rc", "s", , 0.0001)
-#
-#
+
 ### Visualize the concepts' values for each state
 
 #create a numeric vector named "iterations"
